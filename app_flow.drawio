@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="Dk3Nc9a5Rh7XrfuJFzN5" name="Page-1">
+        <mxGraphModel dx="560" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="150" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="App.tsx" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="331" y="156" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="359.5" y="200" as="sourcePoint"/>
+                        <mxPoint x="360" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="301" y="270" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="query" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="359" y="210" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="GitHub API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="321" y="295" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="360.5" y="357" as="sourcePoint"/>
+                        <mxPoint x="361" y="417" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="response" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="359" y="365" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="430" width="400" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;h1 style=&quot;font-size: 16px;&quot;&gt;GitHub Request&lt;/h1&gt;&lt;p&gt;useGithubUsersAPI.ts&lt;/p&gt;&lt;p&gt;GET: Users&amp;nbsp; /search/users&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;useGithubReposAPI.ts&lt;/p&gt;&lt;p&gt;GET: Repos /users/{username}/repos&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="200" width="230" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="error" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="440" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="success" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+                    <mxGeometry x="431" y="440" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Error.tsx" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="470" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="470" width="141" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="UserAccordion.tsx&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="396" y="475" width="150" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
