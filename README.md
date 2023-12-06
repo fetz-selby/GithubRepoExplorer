@@ -28,7 +28,7 @@ This is a mobile and desktop-friendly app for viewing GitHub users/organization 
 The app utilizes the GitHub API for fetching the users and repositories. The `GET` request URLs are `/search/users` and `users/{username}/repos` respectively.
 
 ## Setup
-Please modify the `.env` file and set the TOKEN value. This is required by GitHub for the requests.
+Please modify the `.env` file and set the `TOKEN` value. This is required by GitHub for the requests.
 
 ## App Flow
 <img width="571" alt="Screenshot 2023-12-06 at 18 02 30" src="https://github.com/fetz-selby/simsys/assets/6938921/71a78e21-b9a7-42f9-bd63-497c731dfdfb">
