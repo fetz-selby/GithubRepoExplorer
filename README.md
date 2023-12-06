@@ -76,3 +76,7 @@ Moment - for formatting the date
 
 Octokit - Github API request
 
+## Browse App
+
+##### Click [here](https://strong-unicorn-02afdc.netlify.app/) to browse the [App](https://strong-unicorn-02afdc.netlify.app/)
+
