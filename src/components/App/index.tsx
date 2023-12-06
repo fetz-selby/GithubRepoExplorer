@@ -13,6 +13,7 @@ import { UserQueryLabel } from '../UserQueryLabel';
 import { Error } from '../Error';
 import { Box } from '@mui/material';
 import { EmptyUser } from '../EmptyUser';
+import { AppTitle } from '../AppTitle';
 
 const AppComponent = () => {
   const [query, setQuery] = useState<string | null>(null);
@@ -31,6 +32,7 @@ const AppComponent = () => {
         justifyContent="center"
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
       >
+        <AppTitle />
         <Search isLoading={isLoading} onQuery={(q) => setQuery(q)} />
 
         <Grid item xs={12} md={8}>
