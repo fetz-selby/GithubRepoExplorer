@@ -15,8 +15,9 @@ const Search = ({ onQuery, isLoading }: SearchProps) => {
   return (
     <>
       <Grid item xs={12} md={6}>
-        {/* Made it uncontrolled input to save unneccesary re-rendering */}
-        <TextField data-testid="search-input"
+        {/* intentionally made it uncontrolled input to save unneccesary re-rendering */}
+        <TextField
+          data-testid="search-input"
           sx={{
             color: '#555555',
             backgroundColor: '#ffffff',
@@ -36,7 +37,8 @@ const Search = ({ onQuery, isLoading }: SearchProps) => {
       </Grid>
       <Grid item xs={12} md={2}>
         <Stack sx={{ justifyContent: 'center', height: '56px' }}>
-          <Button data-testid="search-button"
+          <Button
+            data-testid="search-button"
             variant="contained"
             onClick={() => onQuery(inputRef.current?.value || null)}
             sx={{ width: '100%', height: '45px' }}

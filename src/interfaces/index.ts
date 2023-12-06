@@ -10,26 +10,3 @@ export interface UserProps {
   reposUrl: string;
   type: UserTypes;
 }
-
-export enum TransitionStates {
-  IDLE = 'idle',
-  LOADING = 'loading',
-  SHOWLIST = 'showlist',
-  ERROR = 'error',
-}
-
-export interface AppTransitionProps {
-  transitionState: TransitionStates;
-}
-
-export enum ActionEventTypes {
-  SEARCH = 'SEARCH',
-  SUCCESS = 'SUCCESS',
-  CLEAR = 'CLEAR',
-  ERROR = 'ERROR',
-  SELECT_ITEM = 'SELECT_ITEM',
-}
-
-export interface SendActionEventTypes {
-  type: ActionEventTypes;
-}

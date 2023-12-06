@@ -7,7 +7,6 @@ import { useEffect, useState, useCallback } from 'react';
 
 interface DataProps {
   data: UserProps[] | [];
-  page: number;
   user: string | null;
 }
 
@@ -59,7 +58,7 @@ const promiseMachine = {
 };
 
 const PER_PAGE = 5;
-const init: DataProps = { data: [], page: 1, user: null };
+const init: DataProps = { data: [], user: null };
 
 const useGithubUsersAPI = (queryUser: string | null) => {
   const [data, setData] = useState(init);
@@ -71,12 +70,12 @@ const useGithubUsersAPI = (queryUser: string | null) => {
     );
   };
 
-  const getUserName = useCallback(async (user: string | null, page: number) => {
+  const getUserName = useCallback(async (user: string | null) => {
     try {
       send('SEND_REQUEST');
       const octokit = new Octokit({ auth: process.env.TOKEN });
       const { data } = await octokit.request(
-        `GET /search/users?q=${user}&per_page=${PER_PAGE}&page=${page}`,
+        `GET /search/users?q=${user}&per_page=${PER_PAGE}&page=1`,
         {
           headers: {
             'X-GitHub-Api-Version': process.env.GITHUB_API_VERSION,
@@ -102,7 +101,7 @@ const useGithubUsersAPI = (queryUser: string | null) => {
   useEffect(() => {
     if (queryUser) {
       setData((prev) => ({ ...prev, user: queryUser }));
-      getUserName(queryUser, 1);
+      getUserName(queryUser);
     }
   }, [queryUser, getUserName]);
 
