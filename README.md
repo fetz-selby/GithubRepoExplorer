@@ -39,10 +39,10 @@ The chart was created with [XState](https://stately.ai/viz)
 
 
 ## How to use the app
-1.   Enter a GitHub username in the search field, press Enter, or click on the Search button. Some basic info that the shows about the user is the avatar, username, and the type. The type could either be user or organization.
+- Enter a GitHub username in the search field, press Enter, or click on the Search button. Some basic info that the shows about the user is the avatar, username, and the type. The type could either be user or organization.
 <img width="780" alt="Screenshot 2023-12-06 at 15 38 53" src="https://github.com/fetz-selby/simsys/assets/6938921/6b90a0ce-abdf-4f0d-b047-b6bd77f0047d">
 
-2.   On clicking on any of the users shown will show the repositories of that user. It's an accordion-based component that expands to show the details. The details contained in a repository item includes name, description, language and when last the repo was updated.
+- On clicking on any of the users shown will show the repositories of that user. It's an accordion-based component that expands to show the details. The details contained in a repository item include name, description, language, and when last the repo was updated.
 <img width="774" alt="Screenshot 2023-12-06 at 16 43 00" src="https://github.com/fetz-selby/simsys/assets/6938921/63fd54a7-1a1a-42e9-be96-1f395c7fea26">
 
 
@@ -66,8 +66,13 @@ The chart was created with [XState](https://stately.ai/viz)
 
 ## Libraries Used
 
-SWR - for fetching data from the backend
-MUI - for styling the app
-Cypress - for testing the app
+SWR - for fetching (has caching features similar to react-query)
+
+MUI - for styling
+
+Cypress - for testing
+
 Moment - for formatting the date
+
 Octokit - Github API request
+
