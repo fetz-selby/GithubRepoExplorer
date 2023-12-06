@@ -22,7 +22,7 @@ Builds the app for production to the `build` folder.
 
 ## App Info
 
-This is a mobile and destop friendly app for viewing GitHub users/organization and their repositories. It performs a query search on the given text and returns the first 5 best matches. If there's no matching or similar username, a message is displayed to inform you of the outcome. Also, when there is a connection loss or something wrong with the implementing API, a friendly message is displayed to keep you informed.
+This is a mobile and desktop-friendly app for viewing GitHub users/organization and their repositories. It performs a query search on the given text and returns the first 5 best matches. If there's no matching or similar username, a message is displayed to inform you of the outcome. Also, when there is a connection loss or something wrong with the implementing API, a friendly message is displayed to keep you informed.
 
 ## API
 The app utilizes the GitHub API for fetching the users and repositories. The `GET` request URLs are `/search/users` and `users/{username}/repos` respectively.
