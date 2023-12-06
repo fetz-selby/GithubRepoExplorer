@@ -1,6 +1,4 @@
-import { RepoItemProps } from '../components/Repo/RepoItem';
 import { getShapedRepoData } from '../utils';
-import { useMemo } from 'react';
 import useSWR from 'swr';
 
 const fetcher = async (url: string) => {
@@ -14,12 +12,7 @@ const fetcher = async (url: string) => {
 const useGithubReposAPI = (reposUrl: string | null) => {
   const { data, error, isLoading } = useSWR(reposUrl, fetcher);
 
-  const parsedData = useMemo(
-    () => getShapedRepoData(data) as RepoItemProps[],
-    [data]
-  );
-
-  return { data: parsedData, error, isLoading };
+  return { data: getShapedRepoData(data), error, isLoading };
 };
 
 export { useGithubReposAPI };
