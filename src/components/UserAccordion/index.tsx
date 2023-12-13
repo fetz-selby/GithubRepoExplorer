@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import RepoList from '../Repo';
+import RepoList from '../Repo/RepoList';
 import { UserProps, UserTypes } from '../../interfaces';
 import { Avatar, Chip } from '@mui/material';
 
@@ -53,7 +53,9 @@ const UserAccordion = ({ users }: UserAccordionProps) => {
     </>
   );
 
-  return <Stack data-testid="accordion">{renderGithubUserAccordionItem()}</Stack>;
+  return (
+    <Stack data-testid="accordion">{renderGithubUserAccordionItem()}</Stack>
+  );
 };
 
 export default UserAccordion;
