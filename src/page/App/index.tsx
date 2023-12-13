@@ -4,16 +4,16 @@ import {
   PromiseTransitionStates,
   useGithubUsersAPI,
 } from '../../hooks/useGithubUsersAPI';
-import { Search } from '../Search';
-import UserAccordion from '../UserAccordion';
-import UserAccordionLoading from '../UserAccordionSkelecton';
+import Search from '../../components/Search';
+import UserAccordion from '../../components/UserAccordion';
+import UserAccordionLoading from '../../components/UserAccordionSkelecton';
 import { useState } from 'react';
 import Grid from '@mui/material/Grid';
-import { UserQueryLabel } from '../UserQueryLabel';
-import { Error } from '../Error';
+import UserQueryLabel from '../../components/UserQueryLabel';
+import Error from '../../components/Error';
 import { Box } from '@mui/material';
-import { EmptyUser } from '../EmptyUser';
-import { AppTitle } from '../AppTitle';
+import EmptyUser from '../../components/EmptyUser';
+import AppTitle from '../../components/AppTitle';
 
 const AppComponent = () => {
   const [query, setQuery] = useState<string | null>(null);

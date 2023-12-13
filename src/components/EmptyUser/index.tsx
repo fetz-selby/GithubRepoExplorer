@@ -6,4 +6,4 @@ const EmptyUser = () => (
   </Typography>
 );
 
-export { EmptyUser };
+export default EmptyUser;

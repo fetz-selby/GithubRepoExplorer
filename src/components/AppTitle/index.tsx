@@ -18,4 +18,4 @@ const AppTitle = () => {
   );
 };
 
-export { AppTitle };
+export default AppTitle;

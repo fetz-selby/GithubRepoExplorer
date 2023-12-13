@@ -16,4 +16,4 @@ const UserQueryLabel = ({ query }: UserQueryLabelProps) => {
   );
 };
 
-export { UserQueryLabel };
+export default UserQueryLabel;
