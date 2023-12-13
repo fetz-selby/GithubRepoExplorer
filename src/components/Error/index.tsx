@@ -14,4 +14,4 @@ const Error = () => {
   );
 };
 
-export { Error };
+export default Error;

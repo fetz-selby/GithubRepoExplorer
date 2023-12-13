@@ -52,4 +52,4 @@ const Search = ({ onQuery, isLoading }: SearchProps) => {
   );
 };
 
-export { Search };
+export default Search;

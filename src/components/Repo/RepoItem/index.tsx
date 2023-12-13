@@ -64,4 +64,4 @@ const RepoItem = ({
   );
 };
 
-export { RepoItem };
+export default RepoItem;

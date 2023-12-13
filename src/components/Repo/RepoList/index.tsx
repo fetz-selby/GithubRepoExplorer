@@ -1,22 +1,12 @@
 import { useGithubReposAPI } from '../../../hooks/useGithubReposAPI';
-import { RepoItem } from '../RepoItem';
+import RepoItem from '../RepoItem';
 import { Stack } from '@mui/system';
 import Loading from '../../../components/Loading';
-import { Typography } from '@mui/material';
-import { colors } from '../../../styles';
+import RepoLabel from '../RepoLabel';
 
 interface RepoListProps {
   reposUrl: string | null;
 }
-
-const RepoLabel = ({ message }: { message: string }) => (
-  <Typography
-    variant="body1"
-    sx={{ fontStyle: 'italic', color: `${colors.typography.medium}` }}
-  >
-    {message}
-  </Typography>
-);
 
 const RepoList = ({ reposUrl }: RepoListProps) => {
   const { data, isLoading, error } = useGithubReposAPI(reposUrl);
@@ -39,4 +29,4 @@ const RepoList = ({ reposUrl }: RepoListProps) => {
   );
 };
 
-export { RepoList };
+export default RepoList;
